@@ -45,7 +45,7 @@ def api_comment_list(content_id):
     else:
         message = 'content_id {} not found'.format(content_id)
         response = {
-                'status': 'NOT-FOUND ',
+                'status': 'NOT-FOUND',
                 'message': message,
                 }
         return jsonify(response), 404
